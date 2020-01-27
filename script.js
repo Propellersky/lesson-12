@@ -1,0 +1,16 @@
+let test = ["HTML", 11, "JavaScript", 2, "CSS", 23, 12];
+console.log(test);
+test.push(-1);
+console.log(test);
+test.unshift(-1000);
+console.log(test);
+test.push("Last array element");
+console.log(test);
+test.splice(3, 1);
+console.log(test);
+let numericTest = test.filter(test => typeof test === "number");
+console.log(numericTest);
+let powArray = numericTest.map(test => Math.pow(test, 2));
+console.log(powArray);
+console.log(Math.max.apply(null, powArray));
+alert(powArray);
